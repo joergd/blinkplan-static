@@ -1,0 +1,53 @@
+body {
+  font-size: 1.2em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+footer {
+  margin-top: 160px;
+}
+
+.footer-banner {
+  background-color: #636466;
+  color: white;
+}
+
+.footer-banner ul li {
+  border-top: 1px solid #4c4c4c;
+}
+
+.try {
+  margin-top: 20px;
+  margin-left: 22px;
+  background-color: #34495e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  list-style: none;
+}
+.sidenav li {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.sidenav li a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+article {
+  margin-bottom: 5em;
+}

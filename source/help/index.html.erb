@@ -1,0 +1,35 @@
+---
+title: Help | Home
+---
+
+
+<h1><%= link_to(image_tag("logo.png"), "/") %> <%= link_to "Blinkplan Help", "#top" %></h1>
+<br/>
+<div class="row" id="top">
+  <div class="span4">
+    <%= link_to "Try Blinkplan", "/signup", class: "try btn" %>
+    <ul class="sidenav">
+      <li><%= link_to "Supported browsers", "#browsers" %></li>
+      <li><%= link_to "Multi-page Drag and Drop", "#dragmultiple" %></li>
+    </ul>
+  </div>
+  <div class="span8">
+    <section class="main">
+      <article>
+        <p><a id="browsers"> </a></p>
+        <h2>Supported Browsers</h2>
+        <p>We support the latest versions of <%= link_to "Chrome", "http://google.com/chrome" %>, <%= link_to "Safari", "http://apple.com/safari" %> and <%= link_to "Firefox", "http://getfirefox.net" %>. You can download these for free by clicking on their names.</p>
+      </article>
+
+      <article>
+        <p><a id="dragmultiple"> </a></p>
+        <h2>Multi-page Drag and Drop</h2>
+        <p>With Blinkplan you can select multiple pages, and drag and drop them as a single unit. When you hover over a page, click on the drag icon in the top left corner of the page.</p>
+        <p><%= image_tag "screenshots/page-drag-icon.png" %></p>
+        <p>The page will get a red dashed border. Click on the drag icon of another page to highlight the second page. And highlight as many pages like this as you like.</p>
+        <p><%= image_tag "screenshots/page-drag-multi-highlight.png" %></p>
+        <p>When you're done, click and hold any one of the drag icons, and drag your pages.</p>
+      </article>
+    </section>
+  </div>
+</div>

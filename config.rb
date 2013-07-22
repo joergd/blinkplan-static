@@ -54,11 +54,20 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 activate :directory_indexes
+activate :asset_hash
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user   = "deploy"
+  deploy.host   = "66.228.32.230"
+  deploy.path   = "/var/www/blinkplan/shared/static"
+  deploy.clean = true
+end
 
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript

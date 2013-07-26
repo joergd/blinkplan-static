@@ -1,0 +1,199 @@
+body {
+  font-size: 1.2em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+.contents {
+  margin-bottom: 160px;
+}
+
+.footer-banner {
+  background-color: #636466;
+  color: white;
+}
+
+.footer-banner ul li {
+  border-top: 1px solid #4c4c4c;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.try {
+  margin-top: 20px;
+  margin-left: 22px;
+  background-color: #34495e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  letter-spacing: 0.1em;
+  margin-bottom: 35px;
+}
+
+.sidenav {
+  list-style: none;
+}
+.sidenav li {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.sidenav li a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+article {
+  margin-bottom: 5em;
+}
+
+
+/* HOME PAGE */
+
+.navsliver {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  border-bottom: 2px solid #636466;
+  text-align: right;
+  z-index: 100;
+}
+
+.full-width {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.full-width.header {
+  height: 176px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #636466;
+}
+
+.full-width.about {
+  background-color: #c8e9f1;
+}
+
+.full-width.about blockquote {
+  margin-top: 20px;
+}
+
+.full-width.about i {
+  color: #a0c1ca;
+}
+
+.full-width.blurb {
+  background-color: white;
+  color: #5d6c7e;
+}
+
+.full-width.features {
+  background-color: #e8ffc4
+}
+.full-width.features p {
+  font-size: 65%;
+}
+.full-width.features h4 {
+  margin-top: 25px;
+}
+.full-width.prices {
+  background-color: #f2cc51
+}
+
+h1.big {
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 200;
+}
+
+h2.big {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 200;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 115%;
+}
+
+.navbar .nav li {
+  line-height: 0px;
+}
+
+.navbar .nav li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+blockquote {
+  border: 0px;
+}
+
+blockquote small {
+  margin-top: 12px;
+  color: #405d7e;
+  font-size: 14px;
+}
+
+
+
+
+
+.plans {
+  color: #444;
+  margin-bottom: 50px;
+  margin-left: 80px;}
+.plans > div {
+  padding: 15px;
+  background: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin: 25px 0; }
+.plans > div.preferred-plan {
+  z-index: 99;
+  position: relative;
+  margin: 0;
+  -webkit-box-shadow: #aaaaaa 2px 1px 5px, #aaaaaa -2px 1px 5px;
+  -moz-box-shadow: #aaaaaa 2px 1px 5px, #aaaaaa -2px 1px 5px;
+  box-shadow: #aaaaaa 2px 1px 5px, #aaaaaa -2px 1px 5px; }
+.plans > div.preferred-plan .plan-features {
+  margin-top: 45px;
+  margin-bottom: 45px; }
+.plans .plan-name {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-variant: italic; }
+.plans .plan-price {
+  font-weight: normal;
+  font-size: 120%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.plans > span {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  margin-top: -10px; }
+.plans .plan-features {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.plans .plan-features li {
+  margin-bottom: 25px;
+  line-height: 30px;
+}

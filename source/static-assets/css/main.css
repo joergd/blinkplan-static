@@ -157,7 +157,14 @@ blockquote small {
 .plans {
   color: #444;
   margin-bottom: 50px;
-  margin-left: 80px;}
+  }
+
+@media (min-width: 750px) {
+  .plans {
+    margin-left: 80px;
+  }
+}
+
 .plans > div {
   padding: 15px;
   background: white;

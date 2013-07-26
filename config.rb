@@ -53,7 +53,7 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
-activate :directory_indexes
+# activate :directory_indexes
 activate :asset_hash
 
 activate :deploy do |deploy|

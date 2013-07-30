@@ -1,10 +1,10 @@
 body {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 li {
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 h1 a {
@@ -50,7 +50,7 @@ h1 a {
   font-weight: bold;
   text-rendering: optimizelegibility;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .sidenav li a {

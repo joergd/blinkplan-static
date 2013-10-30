@@ -1,0 +1,187 @@
+---
+title: Documentation | Home
+---
+
+<div class="container contents">
+
+  <h1><%= link_to(image_tag("/static-assets/img/logo.png"), "/") %> <%= link_to "Blinkplan Docs", "#top" %></h1>
+  <br/>
+  <div class="row" id="top">
+    <div class="span4">
+      <%= link_to "Try Blinkplan", "/signup", class: "try btn" %>
+      <ul class="sidenav">
+        <li><%= link_to "Supported browsers", "#browsers" %></li>
+        <li><%= link_to "Add pages", "#addpages" %></li>
+        <li><%= link_to "Delete pages", "#deletepages" %></li>
+        <li><%= link_to "Multi-page Drag and Drop", "#dragmultiple" %></li>
+        <li><%= link_to "Swap pages", "#dragswap" %></li>
+        <li><%= link_to "Undo", "#undo" %></li>
+        <li><%= link_to "Key", "#key" %></li>
+        <li><%= link_to "Sharing a flatplan", "#share" %></li>
+        <li><%= link_to "Snapshots", "#snapshots" %></li>
+        <li><%= link_to "Email", "#email" %></li>
+        <li><%= link_to "Printing", "#printing" %></li>
+        <li><%= link_to "Page numbering", "#pagenumbering" %></li>
+        <li><%= link_to "Sections", "#sections" %></li>
+        <li><%= link_to "Stitch-Ins", "#stitchins" %></li>
+        <li><%= link_to "Notes", "#notes" %></li>
+        <li><%= link_to "Clone Flatplan", "#cloneflatplan" %></li>
+        <li><%= link_to "Switch between flatplans", "#switchflatplan" %></li>
+      </ul>
+    </div>
+    <div class="span8">
+      <section class="main">
+        <article>
+          <p><a id="browsers"> </a></p>
+          <h2>Supported Browsers</h2>
+          <p>We support the latest versions of <%= link_to "Chrome", "http://google.com/chrome" %>, <%= link_to "Safari", "http://apple.com/safari" %> and <%= link_to "Firefox", "http://getfirefox.net" %>. You can download these for free by clicking on their names.</p>
+        </article>
+
+        <article>
+          <p><a id="addpages"> </a></p>
+          <h2>Add pages</h2>
+          <p>There is only one way to add pages - and that is via the Page Adder on the top right. Simply type in the number of pages you want - and hit <strong>Add Pages</strong>.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/page-adder.png" %></p>
+          <p>The text box display how many more pages you can add to your current flatplan.</p>
+        </article>
+
+        <article>
+          <p><a id="deletepages"> </a></p>
+          <h2>Delete pages</h2>
+          <p>There are two ways to delete pages - and that is via the Page Adder on the top right, or on the page menu of the page you want to delete.</p>
+          <p>If you want to delete multiple pages simply type in the number of pages you want to delete- and select the delete menu item from the <strong>Add Pages</strong> button. These pages are deleted from the end of the flatplan. So if you type in a 20 - the last 20 pages of the flatplan will be deleted.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/page-adder-delete.png" %></p>
+          <p>If you just want to delete a single page, you can do so by selecting <strong>Delete</strong> from the page menu.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/delete.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="dragmultiple"> </a></p>
+          <h2>Multi-page Drag and Drop</h2>
+          <p>With Blinkplan you can select multiple pages, and drag and drop them as a single unit. When you hover over a page, click on the drag icon in the top left corner of the page.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/page-drag-icon.png" %></p>
+          <p>The page will get a red border. Click on the drag icon of another page to highlight the second page. And highlight as many pages like this as you like.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/page-drag-multi-highlight.png" %></p>
+          <p>When you're done, click and hold any one of the drag icons, and drag your pages.</p>
+        </article>
+
+        <article>
+          <p><a id="dragswap"> </a></p>
+          <h2>Swap pages with Drag and Drop</h2>
+          <p>Instead of moving pages, you can swap pages by holding down the <i>SHIFT</i> key when you start dragging a page - or multiple pages. When you drop the pages you are dragging on top of other pages, then they will be swapped with each other.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/page-drag-swap.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="undo"> </a></p>
+          <h2>Undo</h2>
+          <p>Every action you take on Blinkplan can be undone - provided you haven't refreshed your browser or left the editor in the mean time. So if you delete 100 pages by mistake, or span content across 10 pages overriding your existing pages by mistake - don't panic, just click undo.</p>
+          <p>You can undo all your current history.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/undo-handle.png" %></p>
+          <p><%= image_tag "/static-assets/img/screenshots/undo.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="key"> </a></p>
+          <h2>Key</h2>
+          <p>As you add more content to your pages, the key will keep a running total of the content you have assigned to a particular category, and also a percentage of the total.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/key.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="share"> </a></p>
+          <h2>Share</h2>
+          <p>You can either share a link to a PDF, or a link to a snapshot. You can get a link for either one by using the share menu - and copying the resulting URL from your browser address bar.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/share-link.png" %></p>
+          <p>Both the link to the PDF, and the link to the snapshot don't require your recipients to have a login. Anybody who gets this URL can see your flatplan. But nobody can edit your flatplan.</p>
+          <p class="muted">Note: When your recipients open the link - it always displays the <strong>current state at that time</strong> of your flatplan. If you don't want them to see the current state, but rather a version that you decide on - then download your own PDF when you are ready, and email it as an attachment instead (You can choose to configure your PDF to print in either landscape or portrait mode. You can set this up in your account settings.)</p>
+        </article>
+
+        <article>
+          <p><a id="snapshots"> </a></p>
+          <h2>Snapshots</h2>
+          <p>A snapshot is the current view of your flatplan, but without any of the editing capabilities. The link to the snapshot does not require a login - so anybody who gets a link to this snapshot can view it - and will see the latest version of your pagination. But nobody can edit your flatplan.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/share-link.png" %></p>
+          <p>You can export the snapshot to PDF from the top of the snapshot page.</p>
+        </article>
+
+        <article>
+          <p><a id="email"> </a></p>
+          <h2>Email</h2>
+          <p>You can send a link to the snapshot from within the app by selecting the email link in the flatplan dropdown menu.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/email.png" %></p>
+          <p>Here you can create groups if you like, so that, for example, you can send the flatplan to ‘Sales team’ or ‘All staff’. If they reply to the mail, their replies will come through on your normal e-mail.</p>
+          </p>
+        </article>
+
+        <article>
+          <p><a id="printing"> </a></p>
+          <h2>Printing</h2>
+          <p>The neatest-looking to print your flatplanb, is to download it as a PDF (which takes a couple of seconds) by clicking on <strong>PDF</strong> at the top of the screen. Then print the PDF.</p>
+        </article>
+
+        <article>
+          <p><a id="pagenumbering"> </a></p>
+          <h2>Page Numbering</h2>
+          <p>You can start page numbering either on the cover, or after the inside front cover. You can specify this under the edit screen of your flatplan.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/edit-link.png" %></p>
+          <p><%= image_tag "/static-assets/img/screenshots/edit-page-numbering.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="sections"> </a></p>
+          <h2>Sections</h2>
+          <p>The sections feature is primarily for use by the printers who print your magazine. Depending on what print process they use (eg web, gravure, etc) their machines print magazines in different-sized sections. So, for example, a 124-page mag could be made up of three sections of 32 pages, plus a section of 24, plus a 4-page section, which is the cover. It’s all bound up together and makes no difference to the reader. It simply depends on the size sections that particular printer’s machines can print.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/sections.png" %></p>
+          <p>The sections don't affect your pages. Think of the sections section (sorry) more as a calculator. If you know what sections you want to print on - you can use the calculator to determine whether you created the correct number of pages.</p>
+          <p>Once you know how many pages you want, and what sizes your printing company can print, you work out how many of each size of section you need. Blinkplan allows for any even-sized section size, and as many sections as you need.</p>
+
+        </article>
+
+        <article>
+          <p><a id="stitchins"> </a></p>
+          <h2>Stitch-Ins</h2>
+          <p>You can specify after which page to insert a stitch-in. If you have multiple stitch-ins, it can be a good idea to specify the front and back content of the stitch-in so that you can tell them apart. If it is a whole book you're including, it is the front and back cover of the book. If you want to create a flatplan for the book itself, then you can do so on a separate flatplan.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/edit-stitch-in.png" %></p>
+          <p>The system does not alert you whether the stitch-in can be inserted after the page you set. You need to do your own manual calculations and ensure they are correct.</p>
+          <p>You can see the stitch-ins on the flatplan, and if you click the stitch-in you can see the front and back content. Click the line again to clear the pop up.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/stitch-in.png" %></p>
+
+        </article>
+
+        <article>
+          <p><a id="notes"> </a></p>
+          <h2>Notes</h2>
+          <p>You can include notes for the flatplan as a whole. These will appear on the PDF you can generate.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/notes.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="cloneflatplan"> </a></p>
+          <h2>Clone Flatplan</h2>
+          <p>When you create a new flatplan, you have three options:</p>
+          <p>
+            <ol>
+              <li>Create an empty flatplan</li>
+              <li>Clone the layout - so number of pages, and templates and category used for every page.</li>
+              <li>Clone everything - basically duplicate the current flatplan.</li>
+            </ol>
+          </p>
+          <p><%= image_tag "/static-assets/img/screenshots/create-flatplan-link.png" %></p>
+          <p><%= image_tag "/static-assets/img/screenshots/flatplan-clone.png" %></p>
+
+        </article>
+
+        <article>
+          <p><a id="switchflatplan"> </a></p>
+          <h2>Switch between Flatplans</h2>
+          <p>You can see all your flatplans in the flatplan dropdown menu.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/switch-flatplan.png" %></p>
+
+        </article>
+
+      </section>
+    </div>
+  </div>
+
+</div>

@@ -12,9 +12,10 @@ title: Documentation | Home
       <ul class="sidenav">
         <li><%= link_to "Supported browsers", "#browsers" %></li>
         <li><%= link_to "Add pages", "#addpages" %></li>
+        <li><%= link_to "Edit page", "#editpage" %></li>
         <li><%= link_to "Delete pages", "#deletepages" %></li>
-        <li><%= link_to "Multi-page Drag and Drop", "#dragmultiple" %></li>
-        <li><%= link_to "Swap pages", "#dragswap" %></li>
+        <li><%= link_to "Drag and Drop", "#dragndrop" %></li>
+        <li><%= link_to "Temporary holding area", "#holdingarea" %></li>
         <li><%= link_to "Undo", "#undo" %></li>
         <li><%= link_to "Key", "#key" %></li>
         <li><%= link_to "Sharing a flatplan", "#share" %></li>
@@ -46,6 +47,13 @@ title: Documentation | Home
         </article>
 
         <article>
+          <p><a id="editpage"> </a></p>
+          <h2>Edit page</h2>
+          <p>We have a number of ad-sizes to choose from. Click the page, then click on the current template name to pick a different one.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/edit-page.gif" %></p>
+        </article>
+
+        <article>
           <p><a id="deletepages"> </a></p>
           <h2>Delete pages</h2>
           <p>There are two ways to delete pages - and that is via the Page Adder on the top right, or on the page menu of the page you want to delete.</p>
@@ -56,20 +64,30 @@ title: Documentation | Home
         </article>
 
         <article>
-          <p><a id="dragmultiple"> </a></p>
-          <h2>Multi-page Drag and Drop</h2>
-          <p>With Blinkplan you can select multiple pages, and drag and drop them as a single unit. When you hover over a page, click on the drag icon in the top left corner of the page.</p>
+          <p><a id="dragndrop"> </a></p>
+          <h2>Drag and Drop</h2>
+          <p>Drag &amp; drop has two modes - you can temporarily switch between the modes by holding down the <i>SHIFT</i> key when starting to drag. The two modes are called "sticky", and "flow".</p>
+          <h3>Sticky mode</h3>
+          <p>When you drag a page using this mode (the default mode), it leaves a gap behind. When you drop it onto the holding area, or another gap - you move the page without causing the rest of the pages to reflow. When you drop it onto another page, you swap the pages out.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/sticky-mode.gif" %></p>
+          <h3>Flow mode</h3>
+          <p>Pages reflow automatically after moving pages around. This is useful if you want to insert a page between pages.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/flow-mode.gif" %></p>
+          <h3>Switching between modes</h3>
+          <p>You can temporarily switch between "sticky" mode and "flow" mode by holding down the <i>SHIFT</i> key while starting a drag. In your <a href="/settings">settings</a>, you can specify which mode you want to be your default mode. We recommend the "sticky" mode to be your default. The alternate mode is always accessible via the the <i>SHIFT</i> key when you start a drag. Try it out.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/full-dnd.gif" %></p>
+          <h3>Multi-page drag and drop</h3>
+          <p>With Blinkplan you can select multiple pages, and drag and drop them as a single unit. You can select each page to be dragged, by clicking on the page's drag icon (in the top left of the page). Click and drag the same icon to start the drag.</p>
           <p><%= image_tag "/static-assets/img/screenshots/page-drag-icon.png" %></p>
-          <p>The page will get a red border. Click on the drag icon of another page to highlight the second page. And highlight as many pages like this as you like.</p>
-          <p><%= image_tag "/static-assets/img/screenshots/page-drag-multi-highlight.png" %></p>
-          <p>When you're done, click and hold any one of the drag icons, and drag your pages.</p>
         </article>
 
         <article>
-          <p><a id="dragswap"> </a></p>
-          <h2>Swap pages with Drag and Drop</h2>
-          <p>Instead of moving pages, you can swap pages by holding down the <i>SHIFT</i> key when you start dragging a page - or multiple pages. When you drop the pages you are dragging on top of other pages, then they will be swapped with each other.</p>
-          <p><%= image_tag "/static-assets/img/screenshots/page-drag-swap.png" %></p>
+          <p><a id="holdingarea"> </a></p>
+          <h2>Temporary holding area</h2>
+          <p>You can drag pages from your flatplan onto a holding area. You can open and close the holding area by clicking on the the pull-tab on the left hand side of your browser.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/holding-area-pull-tab.png" %></p>
+          <p>This holding area is a great way to store some pages that you don't yet know where to place.</p>
+
         </article>
 
         <article>

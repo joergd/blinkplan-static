@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Blinkplan <%= data.page.title || "Help" %></title>
+    <title>Blinkplan <%= data.page.title || "Docs" %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,6 +22,7 @@
 
     <link rel="shortcut icon" href="/static-assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/static-assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Easy magazine pagination. Create flat plans online. Export to PDF. Calculates your sections, bind-ins and stitch ins. 60 different content templates. Drag &amp; drop pages to reorder." />
 
   </head>
   <body>
@@ -73,6 +74,7 @@ while(x=eval(x));
                 <li>Sections and Stitch-In calculator</li>
                 <li>Securely stored online</li>
               </ul>
+              Go to: <a href="http://status.blinkplan.com">status.blinkplan.com</a> for our online status.<br/>
               Go to: <a href="http://www.blinkplan.com">blinkplan.com</a>
             </div>
           </div>
@@ -81,17 +83,14 @@ while(x=eval(x));
     </footer>
 
 
-    <script type="text/javascript">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-55600-7']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      ga('create', 'UA-55600-7', 'blinkplan.com');
+      ga('send', 'pageview');
 
     </script>
   </body>

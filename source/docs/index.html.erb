@@ -1,10 +1,10 @@
 ---
-title: Documentation | Home
+title: Documentation
 ---
 
 <div class="container contents">
 
-  <h1><%= link_to(image_tag("/static-assets/img/logo.png"), "/") %> <%= link_to "Blinkplan Docs", "#top" %></h1>
+  <h1><%= link_to(image_tag("/static-assets/img/logo.png", :alt => "logo"), "/home") %> <%= link_to "Blinkplan Docs", "#top", :title => "Documentation" %></h1>
   <br/>
   <div class="row" id="top">
     <div class="span4">
@@ -14,7 +14,7 @@ title: Documentation | Home
         <li><%= link_to "Add pages", "#addpages" %></li>
         <li><%= link_to "Edit page", "#editpage" %></li>
         <li><%= link_to "Delete pages", "#deletepages" %></li>
-        <li><%= link_to "Drag and Drop", "#dragndrop" %></li>
+        <li><%= link_to "Move pages", "#dragndrop" %></li>
         <li><%= link_to "Temporary holding area", "#holdingarea" %></li>
         <li><%= link_to "Undo", "#undo" %></li>
         <li><%= link_to "Key", "#key" %></li>
@@ -65,8 +65,8 @@ title: Documentation | Home
 
         <article>
           <p><a id="dragndrop"> </a></p>
-          <h2>Drag and Drop</h2>
-          <p>Drag &amp; drop has two modes - you can temporarily switch between the modes by holding down the <i>SHIFT</i> key when starting to drag. The two modes are called "sticky", and "flow".</p>
+          <h2>Move pages</h2>
+          <p>You can drag &amp; drop pages to move them. Drag &amp; drop has two modes - you can temporarily switch between the modes by holding down the <i>SHIFT</i> key when starting to drag. The two modes are called "sticky", and "flow".</p>
           <h3>Sticky mode</h3>
           <p>When you drag a page using this mode (the default mode), it leaves a gap behind. When you drop it onto the holding area, or another gap - you move the page without causing the rest of the pages to reflow. When you drop it onto another page, you swap the pages out.</p>
           <p><%= image_tag "/static-assets/img/screenshots/sticky-mode.gif" %></p>

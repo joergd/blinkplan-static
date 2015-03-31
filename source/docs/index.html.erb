@@ -17,7 +17,9 @@ title: Documentation
         <li><%= link_to "Move pages", "#dragndrop" %></li>
         <li><%= link_to "Temporary holding area", "#holdingarea" %></li>
         <li><%= link_to "Undo", "#undo" %></li>
-        <li><%= link_to "Key", "#key" %></li>
+        <li><%= link_to "Categories", "#categories" %></li>
+        <li><%= link_to "Add comments", "#comments" %></li>
+        <li><%= link_to "Tags", "#tags" %></li>
         <li><%= link_to "Sharing a flatplan", "#share" %></li>
         <li><%= link_to "Snapshots", "#snapshots" %></li>
         <li><%= link_to "Email", "#email" %></li>
@@ -100,10 +102,27 @@ title: Documentation
         </article>
 
         <article>
-          <p><a id="key"> </a></p>
-          <h2>Key</h2>
-          <p>As you add more content to your pages, the key will keep a running total of the content you have assigned to a particular category, and also a percentage of the total.</p>
+          <p><a id="categories"> </a></p>
+          <h2>Categories</h2>
+          <p>You can assign different colours to your content in your pages using the categories. We start you off with two default categories, but you can remove them or add more and change their colours by clicking on them.</p>
+          <p>As you add more content to your pages, we will keep a running total of the content you have assigned to a particular category, and also a percentage of the total.</p>
           <p><%= image_tag "/static-assets/img/screenshots/key.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="comments"> </a></p>
+          <h2>Add comments</h2>
+          <p>You can add comments to pages. You will see them in the Comments section on the Edit Page screen.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/write-comment.png" %></p>
+        </article>
+
+        <article>
+          <p><a id="tags"> </a></p>
+          <h2>Tags</h2>
+          <p>You can create tags for each of your pages on the edit screen. Just type in a tag, and press the TAB key to associate to generate it for the page. These tags could be anything like workflow type tags, e.g. "Signed off", "Design started", "Not received", "Awaiting Copy" etc.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/add-tags.png" %></p>
+          <p>You can use these tags to filter your pages, so that you can easily determine which ones have been "Signed off" for example. This filtering ability is also available on the Share link.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/filter-by-tags.png" %></p>
         </article>
 
         <article>

@@ -10,6 +10,7 @@ title: Documentation
     <div class="span4">
       <%= link_to "Try Blinkplan", "/signup", class: "try btn" %>
       <ul class="sidenav">
+        <li><%= link_to "What is it?", "#whatisit" %></li>
         <li><%= link_to "Supported browsers", "#browsers" %></li>
         <li><%= link_to "Add pages", "#addpages" %></li>
         <li><%= link_to "Edit page", "#editpage" %></li>
@@ -34,6 +35,21 @@ title: Documentation
     </div>
     <div class="span8">
       <section class="main">
+        <article>
+          <p><a id="whatisit"> </a></p>
+          <h2>What is it?</h2>
+          <p>Blinkplan is an online tool to create magazine flat plans (or flatplans). They are called different things in different countries. Other names are:
+            <ul>
+              <li>magazine pagination</li>
+              <li>magazine layout templates</li>
+              <li>magazine page maps</li>
+              <li>mapping layout for magazines</li>
+              <li>page map templates</li>
+            </ul>
+            etc ...
+          </p>
+        </article>
+
         <article>
           <p><a id="browsers"> </a></p>
           <h2>Supported Browsers</h2>
@@ -119,8 +135,10 @@ title: Documentation
         <article>
           <p><a id="tags"> </a></p>
           <h2>Tags</h2>
-          <p>You can create tags for each of your pages on the edit screen. Just type in a tag, and press the TAB key to associate to generate it for the page. These tags could be anything like workflow type tags, e.g. "Signed off", "Design started", "Not received", "Awaiting Copy" etc.</p>
+          <p>You can create tags for each of your pages on the edit screen. Just type in a tag, and press the TAB key to add it to the page. These tags could be anything like workflow type tags, e.g. "Signed off", "Design started", "Not received", "Awaiting Copy" etc.</p>
           <p><%= image_tag "/static-assets/img/screenshots/add-tags.png" %></p>
+          <p>Tags are presented via small colored dots at the bottom of each page. You can edit these colors on the Tags screen.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/show-tags.png" %></p>
           <p>You can use these tags to filter your pages, so that you can easily determine which ones have been "Signed off" for example. This filtering ability is also available on the Share link.</p>
           <p><%= image_tag "/static-assets/img/screenshots/filter-by-tags.png" %></p>
         </article>

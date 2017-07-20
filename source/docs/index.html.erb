@@ -14,6 +14,7 @@ title: Documentation
         <li><%= link_to "Supported browsers", "#browsers" %></li>
         <li><%= link_to "Add pages", "#addpages" %></li>
         <li><%= link_to "Edit page", "#editpage" %></li>
+        <li><%= link_to "Thumbnails", "#thumbnails" %></li>
         <li><%= link_to "Delete pages", "#deletepages" %></li>
         <li><%= link_to "Move pages", "#dragndrop" %></li>
         <li><%= link_to "Temporary holding area", "#holdingarea" %></li>
@@ -59,9 +60,10 @@ title: Documentation
         <article>
           <p><a id="addpages"> </a></p>
           <h2>Add pages</h2>
-          <p>There is only one way to add pages - and that is via the Page Adder on the top right. Simply type in the number of pages you want - and hit <strong>Add Pages</strong>.</p>
+          <p>There are two ways to add pages/ The first method is via the Page Adder on the top right. Simply type in the number of pages you want - and hit <strong>Add Pages</strong>.</p>
           <p><%= image_tag "/static-assets/img/screenshots/page-adder.png" %></p>
-          <p>The text box display how many more pages you can add to your current flatplan.</p>
+          <p>The second method is to add new pages inbetween other pages. Every page has a dropdown menu - in it you will find the <strong>Add Pages</strong> option.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/add-pages.png" %></p>
         </article>
 
         <article>
@@ -69,6 +71,17 @@ title: Documentation
           <h2>Edit page</h2>
           <p>We have a number of ad-sizes to choose from. Click the page, then click on the current template name to pick a different one.</p>
           <p><%= image_tag "/static-assets/img/screenshots/edit-page.gif" %></p>
+        </article>
+
+        <article>
+          <p><a id="thumbnails"> </a></p>
+          <h2>Thumbnails</h2>
+          <p>You can upload a thumbnail per page to show the page in a more visual manner. </p>
+          <p><%= image_tag "/static-assets/img/screenshots/upload-thumbnail.png" %></p>
+          <p>Once you have at least one thumbnail - you can choose to show or hide them for the entire flatplan. You'll see an image button appear above the flatplan.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/show-hide-thumbnails.gif" %></p>
+          <p>To delete a thumbnail - Edit the page and hover over the thumbnail.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/delete-thumbnail.png" %></p>
         </article>
 
         <article>
@@ -84,12 +97,12 @@ title: Documentation
         <article>
           <p><a id="dragndrop"> </a></p>
           <h2>Move pages</h2>
-          <p>You can drag &amp; drop pages to move them. Drag &amp; drop has two modes - you can temporarily switch between the modes by holding down the <i>SHIFT</i> key when starting to drag. The two modes are called "sticky", and "flow".</p>
+          <p>You can drag &amp; drop pages to move them. Drag &amp; drop has two modes - you can temporarily switch between the modes by holding down the <i>ALT</i> (or <i>SHIFT</i> for some browsers) key when starting to drag. The two modes are called "sticky", and "flow".</p>
           <h3>Sticky mode</h3>
           <p>When you drag a page using this mode (the default mode), it leaves a gap behind. When you drop it onto the holding area, or another gap - you move the page without causing the rest of the pages to reflow. When you drop it onto another page, you swap the pages out.</p>
           <p><%= image_tag "/static-assets/img/screenshots/sticky-mode.gif" %></p>
           <h3>Flow mode</h3>
-          <p>Pages reflow automatically after moving pages around. This is useful if you want to insert a page between pages.</p>
+          <p>Pages reflow automatically after moving pages around. This is useful if you want to insert a page between pages. <strong>Please note though - to only let go of the mouse button when the mouse pointer is hovering inside the dotted placeholder - else they tend to fly back.</strong></p>
           <p><%= image_tag "/static-assets/img/screenshots/flow-mode.gif" %></p>
           <h3>Switching between modes</h3>
           <p>You can temporarily switch between "sticky" mode and "flow" mode by holding down the <i>SHIFT</i> key while starting a drag. In your <a href="/settings">settings</a>, you can specify which mode you want to be your default mode. We recommend the "sticky" mode to be your default. The alternate mode is always accessible via the the <i>SHIFT</i> key when you start a drag. Try it out.</p>
@@ -172,7 +185,7 @@ title: Documentation
         <article>
           <p><a id="printing"> </a></p>
           <h2>Printing</h2>
-          <p>The neatest-looking to print your flatplanb, is to download it as a PDF (which takes a couple of seconds) by clicking on <strong>PDF</strong> at the top of the screen. Then print the PDF.</p>
+          <p>The neatest-looking to print your flatplan, is to download it as a PDF (which takes a couple of seconds) by clicking on <strong>PDF</strong> at the top of the screen. Then print the PDF.</p>
         </article>
 
         <article>

@@ -78,10 +78,13 @@ title: Documentation
           <h2>Thumbnails</h2>
           <p>You can upload a thumbnail per page to show the page in a more visual manner. </p>
           <p><%= image_tag "/static-assets/img/screenshots/upload-thumbnail.png" %></p>
-          <p>Once you have at least one thumbnail - you can choose to show or hide them for the entire flatplan. You'll see an image button appear above the flatplan.</p>
+          <p>Once you have at least one thumbnail - you can choose to <strong>show or hide</strong> them for the entire flatplan. You'll see an image button appear above the flatplan.</p>
           <p><%= image_tag "/static-assets/img/screenshots/show-hide-thumbnails.gif" %></p>
-          <p>To delete a thumbnail - Edit the page and hover over the thumbnail.</p>
+          <p>To <strong>delete</strong> a thumbnail - Edit the page and click on the trashcan icon below the preview.</p>
           <p><%= image_tag "/static-assets/img/screenshots/delete-thumbnail.png" %></p>
+          <p>If you want to quickly look at a bigger version of the thumbnail you uploaded - you can click the "quick look" icon when you hover over the page.</p>
+          <p><%= image_tag "/static-assets/img/screenshots/quick-look-link.png" %></p>
+          <p><%= image_tag "/static-assets/img/screenshots/quick-look.png" %></p>
         </article>
 
         <article>
@@ -143,6 +146,7 @@ title: Documentation
           <h2>Add comments</h2>
           <p>You can add comments to pages. You will see them in the Comments section on the Edit Page screen.</p>
           <p><%= image_tag "/static-assets/img/screenshots/write-comment.png" %></p>
+          <p>If you mention a co-worker with an <strong>@username</strong>, your co-worker will receive an <strong>email notification</strong> with your comment.</p>
         </article>
 
         <article>
@@ -159,18 +163,18 @@ title: Documentation
         <article>
           <p><a id="share"> </a></p>
           <h2>Share</h2>
-          <p>You can either share a link to a PDF, or a link to a snapshot. You can get a link for either one by using the share menu - and copying the resulting URL from your browser address bar.</p>
+          <p>You can either share a link to a PDF, or a link to a view-only version. You can get a link for either one by using the share menu - and copying the resulting URL from your browser address bar.</p>
           <p><%= image_tag "/static-assets/img/screenshots/share-link.png" %></p>
-          <p>Both the link to the PDF, and the link to the snapshot don't require your recipients to have a login. Anybody who gets this URL can see your flatplan. But nobody can edit your flatplan.</p>
-          <p class="muted">Note: When your recipients open the link - it always displays the <strong>current state at that time</strong> of your flatplan. If you don't want them to see the current state, but rather a version that you decide on - then download your own PDF when you are ready, and email it as an attachment instead (You can choose to configure your PDF to print in either landscape or portrait mode. You can set this up in your account settings.)</p>
+          <p>Both the link to the PDF, and the link to the view-only version don't require your recipients to have a login. Anybody who gets this URL can see your flatplan. But nobody can edit your flatplan.</p>
+          <p class="muted">Note: When your recipients open the link - it always displays the <strong>current state at that time</strong> of your flatplan. If you don't want them to see the current state, but rather a version that you decide on - then download your own PDF when you are ready, and email it as an attachment instead.</p>
         </article>
 
         <article>
           <p><a id="snapshots"> </a></p>
-          <h2>Snapshots</h2>
-          <p>A snapshot is the current view of your flatplan, but without any of the editing capabilities. The link to the snapshot does not require a login - so anybody who gets a link to this snapshot can view it - and will see the latest version of your pagination. But nobody can edit your flatplan.</p>
+          <h2>View-Only</h2>
+          <p>A view-only version is the current "live" view of your flatplan, but without any of the editing capabilities. The link to the view-only version does not require a login - so anybody who gets this link can view it - and will see the latest version of your pagination. But nobody can edit your flatplan.</p>
           <p><%= image_tag "/static-assets/img/screenshots/share-link.png" %></p>
-          <p>You can export the snapshot to PDF from the top of the snapshot page.</p>
+          <p>You can export the view-only version to PDF from a link on that page.</p>
         </article>
 
         <article>
